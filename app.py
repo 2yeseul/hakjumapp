@@ -22,7 +22,7 @@ def result():
         from selenium import webdriver
         import time
         # C:\IEDriverServer.exe
-        driver = webdriver.Ie('home/seul/.git/IEDriverServer.exe')
+        driver = webdriver.Ie('/home/seul/mysite/flask_app.py/IEDriverServer.exe')
         driver.implicitly_wait(5)
         driver.get('https://acm.sungshin.ac.kr/proweb/index1280.jsp')
         driver.find_element_by_xpath('//*[@id="saveId"]').click()
